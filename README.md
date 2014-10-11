@@ -1,4 +1,4 @@
-# Ronin Static Site Generator
+# Ronin Static Site Boilerplate
 
 > I build this setup to use in my personal projects. It is really
 > simple, fast and highly customizable.
