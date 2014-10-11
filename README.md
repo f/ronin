@@ -6,6 +6,17 @@
 Ronin is a very simple and lightweight **static site boilerplate** using **Jinja2**
 compiler. It uses **Makefile** as task management.
 
+## Start a new Project
+
+Simply clone this repository.
+
+```
+git clone --depth=1 https://github.com/f/ronin myproject
+rm -rf myproject/.git
+cd myproject
+./configure
+```
+
 ## Build
 
 ### Base Requirements
