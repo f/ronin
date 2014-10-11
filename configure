@@ -1,0 +1,14 @@
+#!/bin/bash
+
+pip install jinja2
+npm install bower uglify-js clean-css node-sass
+cd ./asset
+
+# Install Bower Requirements
+../node_modules/.bin/bower install \
+    underscore \
+    jquery
+
+# You can use git clone
+# git clone https://github.com/Rahisify/bxslider-4 bower_components/bxslider-4
+cd -

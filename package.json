@@ -1,0 +1,8 @@
+{
+  "name": "ronin",
+  "description": "Ronin: Simple Static Site Generator",
+  "template": {
+    "base": "templates/_base.html"
+  },
+  "custom_variable": "This is a custom variable!"
+}
