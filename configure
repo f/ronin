@@ -1,7 +1,13 @@
 #!/bin/bash
 
 pip install jinja2
-npm install bower uglify-js clean-css node-sass
+npm install \
+  bower \
+  uglify-js \
+  clean-css \
+  node-sass \
+  browserify \
+  6to5-browserify
 cd ./asset
 
 # Install Bower Requirements

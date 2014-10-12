@@ -5,16 +5,18 @@ default:
 	mkdir -p ./site/asset/css
 	mkdir -p ./site/asset/images
 
-	# Concat JavaScript Files
-	cat ./asset/bower_components/jquery/dist/jquery.js \
-			./asset/js/main.js \
-			> ./site/asset/js/main.js
-
+	# Convert ES6 Files
+	./node_modules/.bin/browserify ./asset/js/main.js \
+			\
+			-r ./asset/bower_components/jquery/dist/jquery.js:jquery \
+			\
+			-t ./node_modules/6to5-browserify/index.js \
+			--outfile ./site/asset/js/main.js
 
 	# Uglify JavaScript files
 	./node_modules/.bin/uglifyjs ./site/asset/js/main.js \
 			--source-map=./site/asset/js/main.min.js.map \
-			--source-map-root=../../ \
+			--source-map-root=../../../ \
 			--source-map-url=main.min.js.map \
 			> ./site/asset/js/main.min.js
 
