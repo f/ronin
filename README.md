@@ -1,4 +1,4 @@
-# Ronin Static Site Generator
+# Ronin: Static Site Boilerplate
 
 > I build this setup to use in my personal projects. It is really
 > simple, fast and highly customizable.
@@ -52,6 +52,28 @@ template scope.
 On Mac OS X, you can run:
 ```
 open site/index.html
+```
+
+## Docs
+
+### `assets/js/`
+
+You should put JavaScript files here.
+
+
+### `assets/css/`
+
+You should put SCSS files here.
+
+
+### `assets/templates/`
+
+You should put Jinja2 templates here. `_base.html` is your master template by default. You can change it on `package.json` file.
+
+```json
+  "template": {
+    "base": "templates/_base.html"
+  },
 ```
 
 ## License
