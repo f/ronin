@@ -14,13 +14,10 @@ compiler. It uses **Makefile** as task management.
 
 ## Start a new Project
 
-Simply clone this repository.
+Using **[Kurye](http://github.com/f/kurye)**:
 
 ```
-git clone --depth=1 https://github.com/f/ronin myproject
-rm -rf myproject/.git
-cd myproject
-./configure
+kurye f/ronin -n myproject
 ```
 
 ## Build
