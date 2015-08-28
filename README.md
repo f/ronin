@@ -9,7 +9,7 @@ compiler. It uses **Makefile** as task management.
 ## Features
 
   - **SASS** as CSS preprocessor by default.
-  - **ES6** (6to5) as JavaScript preprocessor by default.
+  - **ES6** (Babel.js) as JavaScript preprocessor by default.
   - **Jinja2** template build system by default.
 
 ## Start a new Project
