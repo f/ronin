@@ -4,6 +4,7 @@ import {EventEmitter} from 'events'
 class Main extends EventEmitter {
 
   constructor() {
+    super();
     this.on('ready', (e)=> {
       console.log("ES6 is working!");
     });

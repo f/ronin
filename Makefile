@@ -10,8 +10,9 @@ default:
 			\
 			-r ./asset/bower_components/jquery/dist/jquery.js:jquery \
 			\
-			-t ./node_modules/babelify/index.js \
-			--outfile ./site/asset/js/main.js
+			-t [ ./node_modules/babelify/index.js \
+			--outfile ./site/asset/js/main.js \
+			--stage 0]
 
 	# Uglify JavaScript files
 	./node_modules/.bin/uglifyjs ./site/asset/js/main.js \
