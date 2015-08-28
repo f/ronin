@@ -7,7 +7,7 @@ npm install \
   clean-css \
   node-sass \
   browserify \
-  6to5-browserify
+  babelify
 cd ./asset
 
 # Install Bower Requirements

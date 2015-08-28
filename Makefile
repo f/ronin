@@ -10,7 +10,7 @@ default:
 			\
 			-r ./asset/bower_components/jquery/dist/jquery.js:jquery \
 			\
-			-t ./node_modules/6to5-browserify/index.js \
+			-t ./node_modules/babelify/index.js \
 			--outfile ./site/asset/js/main.js
 
 	# Uglify JavaScript files
